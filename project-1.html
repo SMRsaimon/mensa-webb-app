@@ -309,7 +309,28 @@
 <div class="shape8 rotateme"><img src="assets/img/shape2.svg" alt="shape"></div>
 </footer>
 
-<div class="go-top"><i data-feather="arrow-up"></i></div>
+<div class="go-top"><i data-feather="arrow-up"></i></div><script>
+
+
+    var chatbox = document.getElementById('fb-customer-chat');
+      chatbox.setAttribute("page_id", "279931489281757");
+      chatbox.setAttribute("attribution", "biz_inbox");
+    
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml            : true,
+          version          : 'v11.0'
+        });
+      };
+    
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
 
 <script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="assets/js/jquery.min.js"></script>
 <script src="assets/js/popper.min.js"></script>
